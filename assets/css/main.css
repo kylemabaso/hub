@@ -15,18 +15,7 @@ body {
     height: 100vh;
     min-height: 350px;
 }
-.footer {
-    background: #333;
-    background: url(../images/footer.svg) no-repeat;
-    background-size: cover;
-    min-height: 335px;
-    padding-top: 148px;
-}
-.footer .nav-link {
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-}
+
 .social-links {
     color: #fff;
     font-size: 20px;
@@ -48,10 +37,21 @@ li.nav-item {
     padding: 0 10px;
 }
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
-    background: #16B7F8;  /* fallback for old browsers */
+    /* background: #16B7F8; */ /* fallback for old browsers */
     color: #fff;
     padding: 10px 25px;
 }
+
+.navbar-nav .nav-link.active:after {
+    background: none repeat scroll 0 0 #16B7F8;
+    position: relative;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 5px;
+    width: 35px;
+}
+
 .hero-section {
     height: 100vh;
     overflow: hidden;
@@ -84,7 +84,17 @@ li.nav-item {
   }
 .logo {
     padding-top: 20px;
-}  
+}
+
+.bttn-bg-gradient {
+    background: #39b8ea url("../images/bttn-bg-gradient.png") repeat-y right;
+    padding-left: 15px;
+    padding-right: 15px !important;
+    border-radius: 15px !important;
+}
+    footer .bttn-bg-gradient {
+        line-height: 40px;
+    }
   
   .text-blue {
     color: #10bbf9;
@@ -176,13 +186,41 @@ li.nav-item {
     padding: 60px 0;
 }
 
-      /* Set the height of the footer */
+.home-paint-drip {
+    background: #0f0f0f url("../images/dripping-paint.png") top left no-repeat;
+    padding-top: 130px;
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+    border-radius: 25px;
+}
+
+.home-paint-drip h2 {
+    font-size: 32px;
+    font-weight: 800;
+    background: -webkit-linear-gradient(0deg, #345d98, #eb589b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* Set the height of the footer */
 .footer {
-    height: 300px;
+    color: #FFF;
+    background: #333;
+    background: url(../images/footer.svg) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    min-height: 300px;
+    padding-top: 148px;
     position: relative; /* set position to relative on the footer */
-  }
+}
+.footer .nav-link {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
   
   /* Style the terms and conditions link */
   .footer a {
