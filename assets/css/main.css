@@ -322,9 +322,9 @@ li.nav-item {
     padding: 20px 0;
 }
 .feature {
-    background: #212121;
+    background: #212121 url("../images/colourful-drop.png") top left no-repeat;
     color: #fff;
-    padding: 25px;
+    padding: 60px 25px 25px;
     height: 100%;
 }
 .beliefs {
